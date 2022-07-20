@@ -6,42 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture | Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <a href="./index.html">
-            <img src="img/icons/logo.svg" alt="logo">
-        </a>
+        <a href="./index.html"><img src="img/icons/logo.svg" alt="logo"></a>
         <input type="text" placeholder="Search">
         <nav>
-            <a href="./catalog.html">Catalog</a>
-            <a href="">Cart</a>
+            <a class="catalog" href="./catalog.html">Catalog</a>
+            <a class="cart" href="">Cart</a>
         </nav>
     </header>
     <section>
-        <h1>Everything Your Home Deserves</h1>
-        <p>Our furniture &#8211 your reflection</p>
-        <a href="./catalog.html">Go to catalog</a>
+        <h1 class="heading">Everything Your Home Deserves</h1>
+        <p class="slogan">Our furniture &#8211 your reflection</p>
+        <a class="link" href="./catalog.html">Go to catalog</a>
     </section>
     <section>
-        <h2>Special Offers</h2>
+        <h2 class="special">Special Offers</h2>
         <img src="img/products/armchair_VILORA.jpg" alt="Armchair VILORA">
-        <h3>Armchair VILORA</h3>
-        <p>Soft and cozy, neat and stylish. Elastic cushions, seats and soft-touch fabric.</p>
-        <p>$298.97</p>
-        $<strike>349.99</strike>
+        <h3 class="caption">Armchair VILORA</h3>
+        <p class="desc">Soft and cozy, neat and stylish. Elastic cushions, seats and soft-touch fabric.</p>
+        <p class="price">$298.97</p>
+        <p class="price-old">$349.99</p>
     </section>
     <footer>
         <img src="img/icons/logo.svg" alt="logo">
-        <h4>Menu</h4>
-        <a href="./index.html">Home</a>
-        <a href="./catalog.html">Catalog</a>
-        <a href="">Cart</a>
-        <h4>Contacts</h4>
-        <a href="">+1 408 XXX XXXX</a>
-        <a href="">help@XXX-XXX.com</a>
-        <a href="">
+        <h4 class="menu">Menu</h4>
+        <a class="link-menu" href="./index.html">Home</a>
+        <a class="link-menu" href="./catalog.html">Catalog</a>
+        <a class="link-menu" href="">Cart</a>
+        <h4 class="contacts">Contacts</h4>
+        <a class="phone" href="">+1 408 XXX XXXX</a>
+        <a class="email" href="">help@XXX-XXX.com</a>
+        <a href="#">
             <img src="img/icons/facebook.svg" alt="Facebook">
         </a>
         <a href="">
@@ -50,10 +49,10 @@
         <a href="">
             <img src="img/icons/twitter.svg" alt="Twitter">
         </a>
-        <form action="#">
-            <p>Get our news and updates</p>
-            <input type=”email”>
-            <button>Subscribe</button>
+        <form action="">
+            <p class="news">Get our news and updates</p>
+            <input class="input-email" type=”email” placeholder="Email">
+            <button class="btn-subscribe">Subscribe</button>
         </form>
     </footer>
 </body>
