@@ -1,0 +1,106 @@
+.catalog {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.cart {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.heading {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+}
+
+.slogan {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.link {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.special {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    color: #000000;
+}
+
+.caption {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.desc {
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+
+}
+
+.price {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #050505;
+}
+
+.price-old {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration-line: line-through;
+    color: #888888;
+}
+
+.menu, .contacts {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.link-menu, .phone, .email {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+    text-decoration: none;
+}
+
+.news {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.input-email {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #C4C4C4;
+}
+
+.btn-subscribe {
+    background: rgba(222, 215, 215, 0.41);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 275px;
+    height: 46px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
