@@ -1,14 +1,9 @@
-.catalog {
+.menu-link {
     font-size: 16px;
     line-height: 20px;
 }
 
-.cart {
-    font-size: 16px;
-    line-height: 20px;
-}
-
-.heading {
+.top-heading {
     font-weight: 600;
     font-size: 64px;
     line-height: 70px;
@@ -19,12 +14,12 @@
     line-height: 32px;
 }
 
-.link {
+.top-link {
     font-size: 16px;
     line-height: 24px;
 }
 
-.special {
+.content-heading {
     font-weight: 600;
     font-size: 48px;
     line-height: 59px;
@@ -42,7 +37,6 @@
     font-size: 14px;
     line-height: 17px;
     color: #888888;
-
 }
 
 .price {
@@ -52,22 +46,19 @@
     color: #050505;
 }
 
-.price-old {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
+.sale {
     text-decoration-line: line-through;
     color: #888888;
 }
 
-.menu, .contacts {
+.footer-heading {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     color: #000000;
 }
 
-.link-menu, .phone, .email {
+.footer-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -75,13 +66,13 @@
     text-decoration: none;
 }
 
-.news {
+.form-text {
     font-size: 14px;
     line-height: 16px;
     color: #000000;
 }
 
-.input-email {
+.form-input-email {
     background: #FFFFFF;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
@@ -93,7 +84,7 @@
     color: #C4C4C4;
 }
 
-.btn-subscribe {
+.form-btn {
     background: rgba(222, 215, 215, 0.41);
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
