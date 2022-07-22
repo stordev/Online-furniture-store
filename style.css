@@ -1,17 +1,32 @@
-.menu-link {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 76px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+
+.nav-link {
     font-size: 16px;
     line-height: 20px;
+    text-decoration: none;
 }
 
 .top-heading {
     font-weight: 600;
     font-size: 64px;
     line-height: 70px;
+    margin-top: 64px;
+    margin-bottom: 16px;
 }
 
-.slogan {
+.top-slogan {
     font-size: 24px;
     line-height: 32px;
+    margin-bottom: 16px;
 }
 
 .top-link {
@@ -24,29 +39,32 @@
     font-size: 48px;
     line-height: 59px;
     color: #000000;
+    margin-bottom: 32px;
 }
 
-.caption {
+.content-caption {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+    margin-bottom: 8px;
 }
 
-.desc {
+.content-desc {
     font-size: 14px;
     line-height: 17px;
     color: #888888;
+    margin-bottom: 12px;
 }
 
-.price {
+.content-price {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     color: #050505;
 }
 
-.sale {
+.content-sale {
     text-decoration-line: line-through;
     color: #888888;
 }
@@ -56,6 +74,7 @@
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+    margin-bottom: 12px;
 }
 
 .footer-link {
@@ -70,6 +89,7 @@
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+    padding-bottom: 16px;
 }
 
 .form-input-email {
@@ -94,4 +114,8 @@
     font-size: 15px;
     line-height: 18px;
     color: #000000;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
 }
