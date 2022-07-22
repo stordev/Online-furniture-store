@@ -10,50 +10,75 @@
 </head>
 
 <body>
-    <header>
-        <a href="./index.html"><img src="img/icons/logo.svg" alt="logo"></a>
-        <input type="text" placeholder="Search">
-        <nav class="menu">
-            <a class="menu-link" href="./catalog.html">Catalog</a>
-            <a class="menu-link" href="#">Cart</a>
-        </nav>
-    </header>
-    <section class="top">
-        <h1 class="top-heading">Everything Your Home Deserves</h1>
-        <p class="slogan">Our furniture &#8211; your reflection</p>
-        <a class="top-link" href="./catalog.html">Go to catalog</a>
-    </section>
-    <section>
+    <div class="top">
+        <header>
+            <a class="logo" href="./index.html"></a>
+            <form action="#">
+                <input class="search" type="text" placeholder="Search">
+            </form>
+            <nav class="nav-menu">
+                <a href="./catalog.html">Catalog</a>
+                <a href="#">Cart</a>
+            </nav>
+        </header>
+        <section class="top-box">
+            <h1 class="top-heading">Everything Your Home Deserves</h1>
+            <p class="top-slogan">Our furniture &#8211; your reflection</p>
+            <div class="go-catalog">
+                <a href="./catalog.html"></a>
+            </div>
+        </section>
+    </div>
+    <section class="content">
         <h2 class="content-heading">Special Offers</h2>
-        <img src="img/products/armchair_VILORA.jpg" alt="Armchair VILORA">
-        <h3 class="caption">Armchair VILORA</h3>
-        <p class="desc">Soft and cozy, neat and stylish. Elastic cushions, seats and soft-touch fabric.</p>
-        <p class="price">$298.97</p>
-        <p class="price sale">$349.99</p>
+        <div class="content-box">
+            <div class="product">
+                <img class="product-img" src="./img/products/armchair_VILORA.jpg" alt="Armchair VILORA">
+                <h3 class="product-caption">Armchair VILORA</h3>
+                <p class="product-desc">Soft and cozy, neat and stylish. Elastic cushions, seats and soft-touch fabric.
+                </p>
+                <span class="product-price">$298.97</span>
+                <span class="product-price product-sale">$349.99</span>
+            </div>
+        </div>
+        <div class="content-box">
+            <h2 class="content-heading">Catalog</h2>
+        </div>
+
+
     </section>
     <footer>
-        <img src="img/icons/logo.svg" alt="logo">
-        <h4 class="footer-heading">Menu</h4>
-        <a class="footer-link" href="./index.html">Home</a>
-        <a class="footer-link" href="./catalog.html">Catalog</a>
-        <a class="footer-link" href="#">Cart</a>
-        <h4 class="footer-heading">Contacts</h4>
-        <a class="footer-link" href="#">+1 408 XXX XXXX</a>
-        <a class="footer-link" href="#">help@XXX-XXX.com</a>
-        <a href="#">
-            <img src="img/icons/facebook.svg" alt="Facebook">
-        </a>
-        <a href="#">
-            <img src="img/icons/inst.svg" alt="Instagram">
-        </a>
-        <a href="#">
-            <img src="img/icons/twitter.svg" alt="Twitter">
-        </a>
-        <form class="form" action="#">
-            <p class="form-text">Get our news and updates</p>
-            <input class="form-input-email" type="email" placeholder="Email">
-            <button class="form-btn" type="submit">Subscribe</button>
-        </form>
+        <a class="logo" href="./index.html"></a>
+        <div class="footer-content">
+            <div class="footer-info">
+                <nav class="footer-item">
+                    <h4 class="footer-heading">Menu</h4>
+                    <a class="menu-link" href="./index.html">Home</a>
+                    <a class="menu-link" href="./catalog.html">Catalog</a>
+                    <a class="menu-link" href="#">Cart</a>
+                </nav>
+                <div class="footer-item">
+                    <h4 class="footer-heading">Contacts</h4>
+                    <a href="#">+1 408 XXX XXXX</a><br>
+                    <a href="#">help@XXX-XXX.com</a>
+                    <a href="#">
+                        <img src="./img/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="#">
+                        <img src="./img/icons/inst.svg" alt="Instagram">
+                    </a>
+                    <a href="#">
+                        <img src="./img/icons/twitter.svg" alt="Twitter">
+                    </a>
+                </div>
+            </div>
+            <form action="#">
+                <p class="form-text">Get our news and updates</p>
+                <input class="form-email" type="email" placeholder="Email">
+                <button class="form-btn" type="submit">Subscribe</button>
+            </form>
+        </div>
+
     </footer>
 </body>
 
