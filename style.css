@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-* {    
+* {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 
 a {
@@ -17,10 +17,10 @@ a {
     padding-right: calc(50% - 600px);
 }
 
-.logo:before {        
+.logo:before {
     font-weight: 600;
     font-size: 36px;
-    line-height: 44px;    
+    line-height: 44px;
     text-decoration: none;
     content: "Interior";
 }
@@ -35,11 +35,14 @@ a {
     text-decoration-line: underline;
 }
 
+
+/* ----- top ----- */
+
 .top {
     height: 735px;
     background: url(./img/bg/top_bg.png);
     background-repeat: no-repeat;
-    background-position: center;    
+    background-position: center;
     color: #FFFFFF;
 }
 .top a {
@@ -53,31 +56,31 @@ a {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 .top-search {
     Width: 288px;
-    Height: 41px;        
+    Height: 41px;
     background-color: transparent;
-    border: 1px solid #fff;
-    border-radius: 20px;    
-    padding-left: 32px;    
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    padding-left: 32px;
     box-sizing: border-box;
     outline:none;
-    color: #ffffff
+    color: #FFFFFF;
 }
 .top-search:focus {
     box-shadow: 0 0 0 1px #FFFFFF;
 }
 .top-search::placeholder {
-    color: #ffffff;
+    color: #FFFFFF;
 }
 .top-search:-ms-input-placeholder {
-    color: #ffffff;
+    color: #FFFFFF;
 }
 .top-search::-ms-input-placeholder {
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 .top-menu {
@@ -106,12 +109,14 @@ a {
 }
 
 
+/* ----- content ----- */
+
 .content-heading {
     font-weight: 600;
     font-size: 48px;
     line-height: 59px;
     color: #000000;
-    margin-bottom: 32px;    
+    margin-bottom: 32px;
 }
 
 .product-img {
@@ -142,11 +147,13 @@ a {
 }
 
 
+/* ----- footer ----- */
+
 .footer {
     padding-top: 32px;
     background: url(./img/bg/footer_bg.png);
     background-repeat: no-repeat;
-    background-position: center;    
+    background-position: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -161,7 +168,7 @@ a {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    color: #888888;    
+    color: #888888;
 }
 
 .footer-box-item {
@@ -170,27 +177,25 @@ a {
     gap: 12px;
 }
 
-.footer-social {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;    
-}
-
 .footer-heading {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
-    color: #000000;    
+    color: #000000;
 }
-
 .footer-menu a:hover {
     text-decoration: underline;
 }
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
 
-.footer-form-text {    
+.footer-form-text {
     font-weight: 400;
     font-size: 12px;
-    line-height: 15px;    
+    line-height: 15px;
 }
 
 .footer-form-email {
@@ -199,16 +204,21 @@ a {
     background: #FFFFFF;
     padding-left: 25px;
     border: 1px solid #C4C4C4;
-    box-sizing: border-box;        
-    border-radius: 20px;    
+    box-sizing: border-box;
+    border-radius: 20px;
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
-    color: #C4C4C4;    
+    color: #C4C4C4;
 }
-
 .footer-form-email::placeholder {
-    color: #c4c4c4;
+    color: ##C4C4C4;
+}
+.footer-form-email:-ms-input-placeholder {
+    color: #FFFFFF;
+}
+.footer-form-email::-ms-input-placeholder {
+    color: #FFFFFF;
 }
 
 .footer-form-btn {
@@ -217,7 +227,7 @@ a {
     background: rgba(222, 215, 215, 0.41);
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
-    border-radius: 20px;    
+    border-radius: 20px;
     font-size: 14px;
     line-height: 17px;
     color: #000000;
