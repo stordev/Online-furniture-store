@@ -24,6 +24,9 @@ a {
     text-decoration: none;
     content: "Interior";
 }
+.logo:hover {
+    text-decoration: none;
+}
 
 .link-go {
     font-weight: 400;
@@ -39,7 +42,6 @@ a {
     background-position: center;    
     color: #FFFFFF;
 }
-
 .top a {
     color: #FFFFFF;
 }
@@ -85,7 +87,8 @@ a {
 .top-menu a {
     font-size: 16px;
     line-height: 20px;
-}.top-menu a:hover {
+}
+.top-menu a:hover {
     text-decoration: underline;
 }
 
@@ -102,6 +105,7 @@ a {
     margin-bottom: 16px;
 }
 
+
 .content-heading {
     font-weight: 600;
     font-size: 48px;
@@ -113,7 +117,6 @@ a {
 .product-img {
     height: 250px;
 }
-
 .product-caption {
     font-weight: 500;
     font-size: 24px;
@@ -121,60 +124,76 @@ a {
     color: #000000;
     margin-bottom: 8px;
 }
-
 .product-desc {
     font-size: 14px;
     line-height: 17px;
     color: #888888;
     margin-bottom: 12px;
 }
-
 .product-price {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     color: #050505;
 }
-
 .product-sale {
     text-decoration-line: line-through;
     color: #888888;
 }
 
-footer {
+
+.footer {
+    padding-top: 32px;
     background: url(./img/bg/footer_bg.png);
     background-repeat: no-repeat;
     background-position: center;    
-    background-size: cover;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 130px;
+}
+.footer-box a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;    
+}
+
+.footer-box-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;    
 }
 
 .footer-heading {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
-    color: #000000;
-    margin-bottom: 12px;
+    color: #000000;    
 }
 
-footer a {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #888888;
-}
-
-.menu-link:hover {
+.footer-menu a:hover {
     text-decoration: underline;
 }
 
-.form-text {
+.footer-form-text {    
     font-weight: 400;
     font-size: 12px;
-    line-height: 15px;
-    padding-bottom: 16px;
+    line-height: 15px;    
 }
 
-.form-email {
+.footer-form-email {
     width: 275px;
     height: 46px;
     background: #FFFFFF;
@@ -188,11 +207,11 @@ footer a {
     color: #C4C4C4;    
 }
 
-.form-email::placeholder {
+.footer-form-email::placeholder {
     color: #c4c4c4;
 }
 
-.form-btn {
+.footer-form-btn {
     width: 275px;
     height: 46px;
     background: rgba(222, 215, 215, 0.41);
