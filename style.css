@@ -7,6 +7,14 @@
     padding: 0;
 }
 
+/* apply a natural box layout model to all elements */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 a {
     text-decoration: none;
     color: #000000;
