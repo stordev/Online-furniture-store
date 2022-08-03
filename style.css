@@ -1,18 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-* {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
+:root {
+    --width: 1200px;
+    --space: 32px;
+    --border: 0px;
 }
 
-/* apply a natural box layout model to all elements */
 html {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    /* apply a natural box layout model to all elements */
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 *, *:before, *:after {
-    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-style: inherit;
+    box-sizing: inherit;    
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
 }
 
 a {
@@ -21,8 +35,7 @@ a {
 }
 
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding: 0 calc(50% - var(--width) / 2);
 }
 
 .logo:before {
@@ -68,12 +81,12 @@ a {
 }
 
 .top-search {
-    Width: 288px;
-    Height: 41px;
+    width: 288px;
+    height: 41px;
     background-color: transparent;
     border: 1px solid #FFFFFF;
     border-radius: 20px;
-    padding-left: 32px;
+    padding-left: var(--space);
     box-sizing: border-box;
     outline:none;
     color: #FFFFFF;
@@ -84,16 +97,10 @@ a {
 .top-search::placeholder {
     color: #FFFFFF;
 }
-.top-search:-ms-input-placeholder {
-    color: #FFFFFF;
-}
-.top-search::-ms-input-placeholder {
-    color: #FFFFFF;
-}
 
 .top-menu {
     display: flex;
-    gap: 32px;
+    gap: var(--space);
 }
 .top-menu a {
     font-size: 16px;
@@ -119,23 +126,45 @@ a {
 
 /* ----- content ----- */
 
-.content-heading {
+.content {
+    border: var(--border) solid #000;
+    margin: var(--space) 0;
+}
+.content-block {
+    border: var(--border) solid #00f;
+    margin: var(--space) 0;    
+}
+
+.content-block-heading {
     font-weight: 600;
     font-size: 48px;
     line-height: 59px;
     color: #000000;
-    margin-bottom: 32px;
 }
 
+.product-box {
+    border: var(--border) solid #0f0;
+    margin: var(--space) 0;
+    display: flex;
+    column-gap: calc( var(--space) - 4*var(--border));
+    row-gap: 56px;
+    flex-wrap: wrap;
+}
+
+.product {
+    border: var(--border) solid #ff0;
+    width: calc( (var(--width) - 2*var(--space)) / 3);
+}
 .product-img {
-    height: 250px;
+    width:100%;
+    padding-bottom: 10px;
 }
 .product-caption {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     color: #000000;
-    margin-bottom: 8px;
+    padding-bottom: 8px;
 }
 .product-desc {
     font-size: 14px;
@@ -143,22 +172,50 @@ a {
     color: #888888;
     margin-bottom: 12px;
 }
+
 .product-price {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     color: #050505;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: var(--space);
 }
-.product-sale {
-    text-decoration-line: line-through;
+
+.product-price span:not(:empty)::before {
+    content: '$';
+    display: inline-block; /* Avoid text-decoration propagation from span */
+    text-decoration-line: none;
+}
+.product-price-base:not(:empty):after {
+    content: '99';
+    font-size: 50%;
+    vertical-align: top;
+}
+.product-price-sale:not(:empty)::after {
+    content: '97';
+    font-size: 50%;
+    vertical-align: top;
+}
+
+.special .product-price-base {
     color: #888888;
+    text-decoration-line: line-through;
 }
+.catalog .product-price-sale {
+    display: none;
+}
+
 
 
 /* ----- footer ----- */
 
 .footer {
-    padding-top: 32px;
+    border: var(--border) solid #f0f;
+    margin-top: var(--space);
+    padding-top: var(--space);
     background: url(./img/bg/footer_bg.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -220,13 +277,7 @@ a {
     color: #C4C4C4;
 }
 .footer-form-email::placeholder {
-    color: ##C4C4C4;
-}
-.footer-form-email:-ms-input-placeholder {
-    color: #FFFFFF;
-}
-.footer-form-email::-ms-input-placeholder {
-    color: #FFFFFF;
+    color: #C4C4C4;
 }
 
 .footer-form-btn {
