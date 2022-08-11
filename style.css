@@ -4,7 +4,7 @@
     --b_dev: 0px; /* border for dev */
     --top_bg-width: 1440;
     --top_bg-height: 735;
-    --space: 32;
+    --space: calc(var(--top_bg-width) / 45);
     --width: calc(var(--top_bg-width) * 10 / 12) ;
     --img_w: calc( (var(--width) - 2 * var(--space)) / 3);
     --r: calc(100vw / var(--top_bg-width)); /* resizability */
@@ -13,6 +13,7 @@
 *, *:before, *:after {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     /* apply a natural box layout model to all elements */
@@ -20,15 +21,21 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
+:focus {
+    outline:none;
+    box-shadow: none;
+    
+}
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 ::-webkit-scrollbar {
     display: none;
 }
 
-a { /* all links */
-    text-decoration: none;
+a { /* all links */    
+    text-decoration: none;    
     color: #000000;
+    outline-style: none;
 }
 a:hover {
     text-decoration: underline;
@@ -42,20 +49,36 @@ img { /* all images */
     padding: 0 calc(100vw / 12);
 }
 
-.logo:before {
-    font-weight: 600;
-    font-size: calc(36 * var(--r));
-    text-decoration: none;
-    content: "Interior";
+.logo {
+    border: var(--b_dev) solid #0ff;
+    display: flex;
 }
-.logo:hover {
-    text-decoration: none;
+.logo a {
+    display: flex;
 }
 
-.link-box a {
-    font-weight: 400;
+.logo a:before {
+    font-weight: 600;
+    font-size: calc(36 * var(--r));    
+    content: "Interior";
+}
+.logo a:hover {
+    text-decoration: none;
+}
+    
+  /* Focusing the button with a mouse, touch, or stylus will show a subtle drop shadow. */
+  :focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
+  }
+
+.link-box {
+    border: var(--b_dev) solid #ff0;
     font-size: calc(16 * var(--r));
+}
+.link-box a {    
     border-bottom: solid calc(1 * var(--r));
+    text-decoration: none;
 }
 
 
@@ -76,37 +99,35 @@ img { /* all images */
 
 .top-header-box {
     border: var(--b_dev) solid #ff0;
-    height: calc(76 * var(--r));
     padding: calc(16 * var(--r)) 0;
     border-bottom: calc(0.5 * var(--r)) solid rgba(255, 255, 255, 0.8);
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+    display: flex;    
+    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .top-search {    
     width: calc(288 * var(--r));
-    height: calc(41 * var(--r));
+    padding: calc(10.5 * var(--r));
     padding-left: calc(32 * var(--r));
+    font-size: calc(16 * var(--r));
     background-color: transparent;
     border: calc(1 * var(--r)) solid #FFFFFF;
     border-radius: calc(20 * var(--r));
     outline: none;
     color: #FFFFFF;
+    display: flex;
 }
 .top-search:focus {
-    font-weight: 400;
-    font-size: calc(16 * var(--r));
     box-shadow: 0 0 0 calc(1 * var(--r)) #FFFFFF;
 }
-.top-search::placeholder {
-    font-weight: 400;
-    font-size: calc(16 * var(--r));
+.top-search::placeholder {    
     color: #FFFFFF;
 }
 
 .top-menu {
+    border: var(--b_dev) solid #ff0;
     border: var(--b_dev) solid #0f0;
     display: flex;
     gap: calc(32 * var(--r));
@@ -123,6 +144,7 @@ img { /* all images */
     margin-top: calc(64 * var(--r));
 }
 .top-slogan {
+    border: var(--b_dev) solid #ff0;
     font-size: calc(24 * var(--r));
     margin: calc(16 * var(--r)) 0;
 }
@@ -230,6 +252,10 @@ img { /* all images */
     color: #888888;
 }
 
+.footer .logo {
+    align-self: flex-start;
+}
+
 .footer-box {
     display: flex;
     flex-wrap: wrap;
@@ -239,6 +265,7 @@ img { /* all images */
 }
 
 .footer-box-item {
+    border: var(--b_dev) solid #0f0;
     display: flex;
     flex-direction: column;
     gap: calc(12 * var(--r));
@@ -259,16 +286,22 @@ img { /* all images */
     gap: calc(16 * var(--r));
 }
 .footer-icons img {
-    min-height: calc(23 * var(--r));
+    height: calc(23 * var(--r));
 }
 .footer-icons img:hover {
     background: rgba(222, 215, 215, 0.41);
     transform: scale(1.2);
 }
 
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    gap: calc(12 * var(--r));
+    margin-bottom: calc(32 * var(--r));
+}
 .footer-form-text {
     margin-bottom: calc(4 * var(--r));
-    font-weight: 400;
     font-size: calc(12 * var(--r));
 }
 
@@ -279,7 +312,6 @@ img { /* all images */
     background: #FFFFFF;
     border: calc(1 * var(--r)) solid #C4C4C4;
     border-radius: calc(20 * var(--r));
-    font-weight: 400;
     font-size: calc(15 * var(--r));
     outline: none;
 }
