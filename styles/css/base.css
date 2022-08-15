@@ -1,0 +1,39 @@
+@import "global.css";
+@import "bg.css";
+@import "top.css";
+@import "main.css";
+@import "footer.css";
+
+
+.center { 
+    padding-left: calc(100vw / 12); 
+    padding-right: calc(100vw / 12); 
+}
+
+.logo {
+    border: var(--b_dev) solid #ff0;
+    display: flex;
+}
+.logo a {
+    display: flex;
+}
+.logo a:before {
+    font-weight: 600;
+    font-size: calc(36 * var(--r));
+    content: "Interior";
+}
+.logo a:hover { text-decoration: none; }
+
+
+.link-box {
+    border: var(--b_dev) solid #ff0;
+    font-size: calc(16 * var(--r));
+}
+.link-box a {
+    border-bottom: solid calc(1 * var(--r));
+    text-decoration: none;
+}
+
+.ellipsis::after {
+    content: '\2026';
+}
