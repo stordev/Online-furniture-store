@@ -9,6 +9,9 @@
     --r: calc(100vw / var(--top_bg-width)); /* resizability */
 }
 
+
+/* ----- global ----- */
+
 *, *:before, *:after {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -39,48 +42,14 @@ img { /* all images */
     width: 100%;
 }
 
-.center {
-    padding: 0 calc(100vw / 12);
-}
-
-.logo {
-    border: var(--b_dev) solid #ff0;
-    display: flex;
-}
-.logo a {
-    display: flex;
-}
-
-.logo a:before {
-    font-weight: 600;
-    font-size: calc(36 * var(--r));    
-    content: "Interior";
-}
-.logo a:hover {
-    text-decoration: none;
-}
-    
-  /* Focusing the button with a mouse, touch, or stylus will show a subtle drop shadow. */
-  :focus:not(:focus-visible) {
-    outline: none;
-    box-shadow: none;
-  }
-
-.link-box {
-    border: var(--b_dev) solid #ff0;
-    font-size: calc(16 * var(--r));
-}
-.link-box a {    
-    border-bottom: solid calc(1 * var(--r));
-    text-decoration: none;
-}
+/* ##### end global ##### */
 
 
 /* ----- top ----- */
 
 .top {
     height: calc( var(--top_bg-height) * var(--r));
-    background: url(./img/bg/top_bg.png), #C4c4C4;
+    background: url(../img/bg/top_bg.png), #C4c4C4;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -131,7 +100,7 @@ img { /* all images */
     font-size: calc(16 * var(--r));
 }
 
-.top-heading {
+.top-title {
     border: var(--b_dev) solid #ff0;
     font-weight: 600;
     font-size: calc(64 * var(--r));
@@ -143,8 +112,10 @@ img { /* all images */
     margin: calc(16 * var(--r)) 0;
 }
 
+/* ##### end top ##### */
 
-/* ----- content ----- */
+
+/* ----- main ----- */
 
 .main {
     border: var(--b_dev) solid #000;
@@ -164,6 +135,33 @@ img { /* all images */
     font-size: calc(48 * var(--r));
     color: #000000;
 }
+
+.for-box {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: calc(var(--space) * var(--r));    
+}
+.for-item {
+    border: var(--b_dev) solid #ff0;    
+    min-height: calc(415 * var(--r));
+    font-weight: 600;
+    font-size: calc(34 * var(--r));
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 4;
+}
+.for-big {
+    grid-column: span 6;
+}
+/* backgounds */ 
+.for-rest { background: url(../img/bg/for/for_rest.png) center / cover; }
+.for-work { background: url(../img/bg/for/for_work.png) center / cover; }
+.for-kitchen { background: url(../img/bg/for/for_kitchen.png) center / cover; }
+.for-children { background: url(../img/bg/for/for_children.png) center / cover; }
+.for-bath { background: url(../img/bg/for/for_bath.png) center / cover; }
 
 .product-box {
     border: var(--b_dev) solid #0f0;
@@ -228,6 +226,7 @@ img { /* all images */
     display: none;
 }
 
+/* ##### end main ##### */
 
 
 /* ----- footer ----- */
@@ -236,7 +235,7 @@ img { /* all images */
     border: var(--b_dev) solid #f0f;
     margin-top: calc(var(--space) * var(--r));
     padding-top: calc(var(--space) * var(--r));
-    background: url(./img/bg/footer_bg.png);
+    background: url(../img/bg/footer_bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -287,7 +286,6 @@ img { /* all images */
     transform: scale(1.2);
 }
 
-
 .footer-form {
     border: var(--b_dev) solid #0f0;
     min-width: calc(275 * var(--r));
@@ -331,3 +329,45 @@ img { /* all images */
     color: #FFFFFF;
     background: #000;
 }
+
+/* ##### end footer ##### */
+
+
+/* ----- other  ----- */
+
+.center {
+    padding: 0 calc(100vw / 12);
+}
+
+/* logo */
+.logo {
+    border: var(--b_dev) solid #ff0;
+    display: flex;
+}
+.logo a {
+    display: flex;
+}
+.logo a:before {
+    font-weight: 600;
+    font-size: calc(36 * var(--r));    
+    content: "Interior";
+}
+.logo a:hover {
+    text-decoration: none;
+}
+
+/* link-box */
+.link-box {
+    border: var(--b_dev) solid #ff0;
+    font-size: calc(16 * var(--r));
+}
+.link-box a {    
+    border-bottom: solid calc(1 * var(--r));
+    text-decoration: none;
+}
+
+.ellipsis::after {
+    content: '\2026';
+}
+
+/* ##### end other ##### */
