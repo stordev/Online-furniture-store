@@ -5,52 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furniture | Catalog</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="./styles/css/base.css">
+    <link rel="stylesheet" href="./styles/css/products.css">
 </head>
 
 <body>
-    <header>
-        <a href="./index.html">
-            <img src="img/icons/logo.svg" alt="logo">
-        </a>
-        <input type="text" placeholder="Search">
-        <nav>
-            <a href="./catalog.html">Catalog</a>
-            <a href="">Cart</a>
-        </nav>
-    </header>
-    <h2>Catalog</h2>
-    <section>
-        <img src="img/products/armchair_VILORA.jpg" alt="Armchair VILORA">
-        <h3>Armchair VILORA</h3>
-        <p>Soft and cozy, neat and stylish. Elastic cushions, seats and soft-touch fabric.</p>
-        <p>$298.97</p>
-    </section>
-    <footer>
-        <img src="img/icons/logo.svg" alt="logo">
-        <h4>Menu</h4>
-        <a href="./index.html">Home</a>
-        <a href="./catalog.html">Catalog</a>
-        <a href="">Cart</a>
-        <h4>Contacts</h4>
-        <a href="">+1 408 XXX XXXX</a>
-        <a href="">help@XXX-XXX.com</a>
-        <a href="">
-            <img src="img/icons/facebook.svg" alt="Facebook">
-        </a>
-        <a href="">
-            <img src="img/icons/inst.svg" alt="Instagram">
-        </a>
-        <a href="">
-            <img src="img/icons/twitter.svg" alt="Twitter">
-        </a>
-        <form action="#">
-            <p>Get our news and updates</p>
-            <input type=”email”>
-            <button>Subscribe</button>
+    <div class="top center">
+        <header class="top-header-box">
+            <div class="logo">
+                <a href="./index.html"></a>
+            </div>
+            <form action="#">
+                <input class="top-search" type="text" placeholder="Search">
+            </form>
+            <nav class="top-menu">
+                <a href="./catalog.html">Catalog</a>
+                <a href="#">Cart</a>
+            </nav>
+        </header>
+        <section class="top-block">
+            <h1 class="top-title">Catalog</h1>
+        </section>
+    </div>
+
+    <div class="main center">
+        
+    </div> <!-- end main -->
+
+    <footer class="footer center">
+        <div class="logo">
+            <a class="logo" href="./index.html"></a>
+        </div>
+        <div class="footer-box">
+            <nav class="footer-box-item footer-menu">
+                <h4 class="footer-heading">Menu</h4>
+                <a class="link" href="./index.html">Home</a>
+                <a class="link" href="./catalog.html">Catalog</a>
+                <a class="link" href="#">Cart</a>
+            </nav>
+            <section class="footer-box-item footer-contacts">
+                <h4 class="footer-heading">Contacts</h4>
+                <a href="tel:1-408-555-555">+1 408 555 555</a>
+                <a href="mailto:help@dev.stor?subject=Test&nbsp;mail&body=Hi!" target="_blank"
+                    rel="noopener noreferrer">help@dev.stor</a>
+                <div class="footer-icons">
+                    <a href="#">
+                        <img src="./img/icons/inst.svg" alt="Instagram">
+                    </a>
+                    <a href="#">
+                        <img src="./img/icons/twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="#">
+                        <img src="./img/icons/facebook.svg" alt="Facebook">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <form class="footer-form" action="#">
+            <span class="footer-form-text">Get our news and updates</span>
+            <input class="footer-form-email" type="email" placeholder="Email">
+            <button class="footer-form-btn" type="submit">Subscribe</button>
         </form>
     </footer>
+
 </body>
 
 </html>
