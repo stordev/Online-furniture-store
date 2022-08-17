@@ -3,6 +3,11 @@
 	background: url(../../img/bg/top/top-home-bg.png) top center / cover no-repeat;
 }
 
+.top-catalog-bg {
+	height: calc( 400 * var(--r));
+	background: url(../../img/bg/top/top-catalog-bg.png) top center / cover no-repeat;
+}
+
 /* for */
 .for-rest-bg { background: url(../../img/bg/for/for-rest-bg.png) center / cover no-repeat; }
 .for-work-bg { background: url(../../img/bg/for/for-work-bg.png) center / cover no-repeat; }
