@@ -11,6 +11,15 @@
     flex-direction: column;
 }
 
+.main-header {
+    border: var(--b_dev) solid #00f;
+    font-size: calc(16 * var(--r));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: calc(var(--gap) * var(--r)) 0;
+}
+
 .main-block-title {
     padding: calc(var(--gap) * var(--r)) 0;
     font-weight: 600;

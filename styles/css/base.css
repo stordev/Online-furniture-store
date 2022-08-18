@@ -37,3 +37,21 @@
 .ellipsis::after {
     content: '\2026';
 }
+
+
+.breadcrumb-box {
+    padding-bottom: calc(8 * var(--r));
+}
+.breadcrumb-box li {
+    border: none;
+    font-size: calc(16 * var(--r));
+    display: inline;
+}
+.breadcrumb-box li:not(:first-of-type)::before {
+    content: "/";
+    margin: calc(10 * var(--r));
+}
+.breadcrumb-box a:hover {
+    border-bottom: solid calc(1 * var(--r));
+    text-decoration: none;
+}
