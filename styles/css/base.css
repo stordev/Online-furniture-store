@@ -55,3 +55,23 @@
     border-bottom: solid calc(1 * var(--r));
     text-decoration: none;
 }
+
+
+.select-box {
+    border: calc(1 * var(--r)) solid #C4C4C4;
+    border-radius: calc(20 * var(--r));
+    padding: calc(10 * var(--r)) 0;
+    padding-left: calc(14 * var(--r));
+    padding-right: calc(16 * var(--r));
+}
+.select-box select {
+    padding-right: calc(32 * var(--r));
+    font-size: calc(16 * var(--r));
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../../img/icons/arrow.png) center right no-repeat;
+    background-size: calc(20 * var(--r));
+}
