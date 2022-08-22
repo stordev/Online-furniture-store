@@ -1,0 +1,30 @@
+@import 'vars';
+
+.main {
+    border: $b-dev solid #000;
+    margin: $gap*$r 0;
+    padding-bottom: $gap * $r;
+}
+
+.main-block {
+    border: $b-dev solid #00f;
+    margin: $gap*$r 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    border: $b-dev solid #00f;
+    font-size: 16*$r;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: $gap*$r 0;
+}
+
+.main-block-title {
+    padding: $gap*$r 0;
+    font-weight: 600;
+    font-size: 48*$r;
+    color: #000000;
+}

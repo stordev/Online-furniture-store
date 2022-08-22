@@ -1,0 +1,64 @@
+@import 'vars';
+
+.top {
+    color: #FFFFFF;
+}
+
+.top a {
+    color: #FFFFFF;
+}
+
+.top-header {
+    border: $b_dev solid #ff0;
+    padding: 16*$r 0;
+    border-bottom: 0.5*$r solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top-search {
+    width: 288*$r;
+    padding: 10.5*$r;
+    padding-left: 32*$r;
+    font-size: 16*$r;
+    background-color: transparent;
+    border: 1*$r solid #FFFFFF;
+    border-radius: 20*$r;
+    outline: none;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.top-search:focus {
+    box-shadow: 0 0 0 1*$r #FFFFFF;
+}
+
+.top-search::placeholder {
+    color: #FFFFFF;
+}
+
+.top-menu {
+    border: $b_dev solid #ff0;
+    display: flex;
+    gap: 32*$r;
+    align-items: center;
+}
+
+.top-menu a {
+    font-size: 16*$r;
+}
+
+.top-title {
+    border: $b_dev solid #ff0;
+    font-weight: 600;
+    font-size: 64*$r;
+    margin-top: 64*$r;
+}
+
+.top-slogan {
+    border: $b_dev solid #ff0;
+    font-size: 24*$r;
+    margin: 16*$r 0;
+}
