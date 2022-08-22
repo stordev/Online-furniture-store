@@ -1,0 +1,36 @@
+@import 'vars';
+
+.top-home-bg {
+    height: 735*$r;
+    background: url(../../img/bg/top/top-home-bg.png) top center / cover no-repeat;
+}
+
+.top-catalog-bg {
+    height: 400*$r;
+    background: url(../../img/bg/top/top-catalog-bg.png) top center / cover no-repeat;
+}
+
+/* for */
+.for-rest-bg {
+    background: url(../../img/bg/for/for-rest-bg.png) center / cover no-repeat;
+}
+
+.for-work-bg {
+    background: url(../../img/bg/for/for-work-bg.png) center / cover no-repeat;
+}
+
+.for-kitchen-bg {
+    background: url(../../img/bg/for/for-kitchen-bg.png) center / cover no-repeat;
+}
+
+.for-children-bg {
+    background: url(../../img/bg/for/for-children-bg.png) center / cover no-repeat;
+}
+
+.for-bath-bg {
+    background: url(../../img/bg/for/for-bath-bg.png) center / cover no-repeat;
+}
+
+.footer-bg {
+    background: url(../../img/bg/footer-bg.png) top center / cover;
+}
