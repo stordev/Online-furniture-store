@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./styles/css/base.css">
+    <link rel="stylesheet" href="./styles/css/cart.css">
+</head>
+
+<body>
+    <div class="top top-cart-bg center">
+        <header class="top-header">
+            <div class="logo">
+                <a href="./index.html"></a>
+            </div>
+            <form action="#">
+                <input class="top-search" type="text" placeholder="Search">
+            </form>
+            <nav class="top-menu">
+                <a href="./catalog.html">Catalog</a>
+                <a href="#">Cart</a>
+            </nav>
+        </header>
+        <section class="top-block">
+            <h1 class="top-title">Cart</h1>
+        </section>
+    </div>
+
+    <div class="main center">
+        <div class="main-block cart">
+            <div class="cart-box">
+                <div class="cart-box-header">
+                    <h4>Product</h4>
+                    <h4>Quantity</h4>
+                </div>
+
+                <div class="cart-item">
+                    <div class="cart-item-content">
+                        <div class="cart-item-img">
+                            <img src="./img/products/table_MENU-min.jpg" alt="table MENU">
+                        </div>
+                        <div class="cart-item-info">
+                            <a class="cart-item-title" href="#">Table MENU</a>
+                            <p class="cart-item-desc">In order to have a pleasant meal, you need the right dining table
+                            </p>
+                            <span class="cart-item-price">$369.99</span>
+                            <div class="cart-item-action-links">
+                                <a>Remove</a>
+                                <a>Save for later</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="cart-item-content">
+                        <div class="cart-item-img">
+                            <img src="./img/products/sofa_NASTAN-min.jpg" alt="Sofa NASTAN">
+                        </div>
+                        <div class="cart-item-info">
+                            <a class="cart-item-title" href="#">Sofa NASTAN</a>
+                            <p class="cart-item-desc">The model is distinguished by the simplicity of lines and shapes,
+                                the absence of catchy
+                            </p>
+                            <span class="cart-item-price">$869.99</span>
+                            <div class="cart-item-action-links">
+                                <a>Remove</a>
+                                <a>Save for later</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                </div>
+
+            </div>
+
+            <form class="checkout" action="#">
+                <span class="checkout-title">Checkout</span>
+                <input type="text" placeholder="Firstname Lastname">
+                <input type="text" placeholder="+1 322 232 322">
+                <input type="text" placeholder="Delivery address">
+                <span class="checkout-total">$1239.98</span>
+                <button>Proceed checkout</button>
+            </form>
+
+        </div>
+
+
+        <section class="main-block Offers">
+            <h2 class="main-block-title">Special Offers</h2>
+            <div class="product-box special">
+                <div class="product">
+                    <img class="product-img" src="./img/products/chandelier_VODA.png" alt="Chandelier VODA">
+                    <a class="product-caption" href="#">Chandelier VODA</a>
+                    <p class="product-desc">Polished stainless steel base for an original floating effect</p>
+                    <div class="product-price">
+                        <span class="product-price-base">499</span>
+                        <span class="product-price-sale">429</span>
+                    </div>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="./img/products/sofa_RONALD.png" alt="Sofa RONALD">
+                    <a class="product-caption" href="#">Sofa RONALD</a>
+                    <p class="product-desc">The model is distinguished by the simplicity of lines and shapes, the
+                        absence of catchy decor</p>
+                    <div class="product-price">
+                        <span class="product-price-base">2199</span>
+                        <span class="product-price-sale">1699</span>
+                    </div>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="./img/products/dresser_VENT.png" alt="Dresser VENT">
+                    <a class="product-caption" href="#">Dresser VENT</a>
+                    <p class="product-desc">The European oak - differs in the special durability and stability</p>
+                    <div class="product-price">
+                        <span class="product-price-base">489</span>
+                        <span class="product-price-sale">369</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="link-box">
+            <a href="./catalog.html">Show more</a>
+        </div>
+    </div>
+
+
+    <footer class="footer footer-bg center">
+        <div class="logo">
+            <a class="logo" href="./index.html"></a>
+        </div>
+        <div class="footer-box">
+            <nav class="footer-box-item footer-menu">
+                <h4 class="footer-heading">Menu</h4>
+                <a class="link" href="./index.html">Home</a>
+                <a class="link" href="./catalog.html">Catalog</a>
+                <a class="link" href="#">Cart</a>
+            </nav>
+            <section class="footer-box-item footer-contacts">
+                <h4 class="footer-heading">Contacts</h4>
+                <a href="tel:1-408-555-555">+1 408 555 555</a>
+                <a href="mailto:help@dev.stor?subject=Test&nbsp;mail&body=Hi!" target="_blank"
+                    rel="noopener noreferrer">help@dev.stor</a>
+                <div class="footer-icons">
+                    <a href="#">
+                        <img src="./img/icons/inst.svg" alt="Instagram">
+                    </a>
+                    <a href="#">
+                        <img src="./img/icons/twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="#">
+                        <img src="./img/icons/facebook.svg" alt="Facebook">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <form class="footer-form" action="#">
+            <span class="footer-form-text">Get our news and updates</span>
+            <input class="footer-form-email" type="email" placeholder="Email">
+            <button class="footer-form-btn" type="submit">Subscribe</button>
+        </form>
+    </footer>
+
+</body>
+
+</html>
