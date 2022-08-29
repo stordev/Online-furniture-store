@@ -1,8 +1,7 @@
 $b-dev: 0px; // border for dev purposes    
 $gap: 32;
 $width: 1440;
-$width-site: $width / 12 * 10;
-$width-product: (
-    $width-site - 2*$gap ) / 3;
-$padding: 100vw / 12;
-$r: 100vw / $width; // resizability
+$width-site: calc($width / 12) * 10;
+$width-product: calc(($width-site - 2 * $gap) / 3);
+$padding: calc(100vw / 12);
+$r: calc(100vw / $width); // resizability
