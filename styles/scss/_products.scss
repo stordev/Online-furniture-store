@@ -1,26 +1,28 @@
 @import '_vars';
 
-.for-box {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: $gap*$r;
-}
+.for {
+    &-box {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: $gap*$r;
+    }
 
-.for-item {
-    border: $b_dev solid #ff0;
-    height: 415*$r;
-    font-weight: 600;
-    font-size: 34*$r;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column: span 4;
-}
+    &-item {
+        border: $b_dev solid #ff0;
+        height: 415*$r;
+        font-weight: 600;
+        font-size: 34*$r;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: span 4;
+    }
 
-.for-big {
-    grid-column: span 6;
+    &-big {
+        grid-column: span 6;
+    }
 }
 
 
@@ -38,49 +40,49 @@
     display: flex;
     flex-direction: column;
     row-gap: 8*$r;
-}
 
-.product-caption {
-    padding-top: 2*$r;
-    font-weight: 500;
-    font-size: 24*$r;
-    color: #000000;
-}
+    &-caption {
+        padding-top: 2*$r;
+        font-weight: 500;
+        font-size: 24*$r;
+        color: #000000;
+    }
 
-.product-desc {
-    font-size: 14*$r;
-    overflow-wrap: break-word;
-    color: #888888;
-}
+    &-desc {
+        font-size: 14*$r;
+        overflow-wrap: break-word;
+        color: #888888;
+    }
 
-.product-price {
-    padding-top: 4*$r;
-    font-weight: 500;
-    font-size: 24*$r;
-    color: #050505;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: start;
-    gap: $gap*$r;
-}
+    &-price {
+        padding-top: 4*$r;
+        font-weight: 500;
+        font-size: 24*$r;
+        color: #050505;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        gap: $gap*$r;
+    }
 
-.product-price span:not(:empty)::before {
-    content: '$';
-    display: inline-block;
-    // avoid text-decoration propagation from span
-    text-decoration-line: none;
-}
+    &-price span:not(:empty)::before {
+        content: '$';
+        display: inline-block;
+        // avoid text-decoration propagation from span
+        text-decoration-line: none;
+    }
 
-.product-price-base:not(:empty):after {
-    content: '99';
-    font-size: 50%;
-    vertical-align: top;
-}
+    &-price-base:not(:empty):after {
+        content: '99';
+        font-size: 50%;
+        vertical-align: top;
+    }
 
-.product-price-sale:not(:empty)::after {
-    content: '97';
-    font-size: 50%;
-    vertical-align: top;
+    &-price-sale:not(:empty)::after {
+        content: '97';
+        font-size: 50%;
+        vertical-align: top;
+    }
 }
 
 .special .product-price-base {

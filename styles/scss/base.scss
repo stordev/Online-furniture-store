@@ -14,58 +14,51 @@
 
 .logo {
     display: flex;
-}
 
-.logo a {
-    display: flex;
-}
+    & a {
+        display: flex;
+    }
 
-.logo a:before {
-    font-weight: 600;
-    font-size: 36*$r;
-    content: "Interior";
-}
+    & a:before {
+        font-weight: 600;
+        font-size: 36*$r;
+        content: "Interior";
+    }
 
-.logo a:hover {
-    text-decoration: none;
+    & a:hover {
+        text-decoration: none;
+    }
 }
-
 
 .link-box {
     border: $b-dev solid #ff0;
     font-size: 16*$r;
-}
 
-.link-box a {
-    border-bottom: solid 1*$r;
-    text-decoration: none;
+    & a {
+        border-bottom: solid 1*$r;
+        text-decoration: none;
+    }
 }
-
-.ellipsis::after {
-    content: '\2026';
-}
-
 
 .breadcrumb-box {
     padding-bottom: 8*$r;
-}
 
-.breadcrumb-box li {
-    border: none;
-    font-size: 16*$r;
-    display: inline;
-}
+    & li {
+        border: none;
+        font-size: 16*$r;
+        display: inline;
+    }
 
-.breadcrumb-box li:not(:first-of-type)::before {
-    content: "/";
-    margin: 10*$r;
-}
+    & li:not(:first-of-type)::before {
+        content: "/";
+        margin: 10*$r;
+    }
 
-.breadcrumb-box a:hover {
-    border-bottom: solid 1*$r;
-    text-decoration: none;
+    & a:hover {
+        border-bottom: solid 1*$r;
+        text-decoration: none;
+    }
 }
-
 
 .select-box {
     border: 1*$r solid #C4C4C4;
@@ -73,16 +66,20 @@
     padding: 10*$r 0;
     padding-left: 14*$r;
     padding-right: 16*$r;
+
+    & select {
+        padding-right: 32*$r;
+        font-size: 16*$r;
+        border: none;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../../img/icons/arrow.png) center right no-repeat;
+        background-size: 20*$r;
+    }
 }
 
-.select-box select {
-    padding-right: 32*$r;
-    font-size: 16*$r;
-    border: none;
-    outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: url(../../img/icons/arrow.png) center right no-repeat;
-    background-size: 20*$r;
+.ellipsis::after {
+    content: '\2026';
 }
