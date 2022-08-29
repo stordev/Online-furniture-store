@@ -5,7 +5,7 @@
 *:after {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 400;    
+    font-weight: 400;
     margin: 0;
     padding: 0;
     // apply a natural box layout model to all elements
@@ -34,4 +34,13 @@ a:hover {
 
 img {
     width: 100%;
+}
+
+button {
+    border: 1*$r solid #000000;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #FFFFFF;
 }
