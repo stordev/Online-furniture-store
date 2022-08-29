@@ -35,6 +35,15 @@ img {
   width: 100%;
 }
 
+button {
+  border: 0.0694444444vw solid #000000;
+}
+
+button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
 .top-home-bg {
   height: 51.0416666667vw;
   background: url(../../img/bg/top/top-home-bg.png) top center/cover no-repeat;
@@ -277,11 +286,6 @@ img {
   border-radius: 1.3888888889vw;
   font-size: 0.9722222222vw;
   text-align: center;
-}
-
-.footer-form-btn:hover {
-  color: #FFFFFF;
-  background: #000;
 }
 
 .for-box {
