@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./styles/css/base.css">
 </head>
 
-<body>
-    <div class="top top-catalog-bg center">
+<body class="body_blocks">
+    <div class="top bg-top-catalog center">
         <header class="top-header">
             <div class="logo">
                 <a href="./index.html"></a>
@@ -22,10 +22,21 @@
                 <a href="./catalog.html">Catalog</a>
                 <a href="cart.html">Cart</a>
             </nav>
+            <nav class="top-menu_m">
+                <a href="#">
+                    <img src="./img/icons/menu/search.png" alt="Search">
+                </a>
+                <a href="./catalog.html">
+                    <img src="./img/icons/menu/catalog.png" alt="Catalog">
+                </a>
+                <a href="./cart.html">
+                    <img src="./img/icons/menu/cart.png" alt="Cart">
+                </a>
+            </nav>
         </header>
-        <section class="top-block">
+        <div class="top-box top-center">
             <h1 class="top-title">Catalog</h1>
-        </section>
+        </div>
     </div>
 
     <div class="main center">
@@ -38,8 +49,8 @@
                     </ul>
                 </div>
                 <div class="select-box">
-                    <label for="">Sort by&nbsp;</label>
-                    <select name="sort_by">
+                    <!--<label for="">Sort by&nbsp;</label>-->
+                    <select class="bg-select" name="sort_by">
                         <option class="option" value="Newest Arrivals">Newest Arrivals</option>
                         <option value="Price: Low to High">Price: Low to High</option>
                         <option value="Price: High to Low">Price: High to Low</option>
@@ -162,27 +173,26 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="link-box">
-            <a href="./catalog.html">Show more</a>
+            <div class="link-box">
+                <a href="./catalog.html">Show more</a>
+            </div>
         </div>
     </div>
 
 
-    <footer class="footer footer-bg center">
+    <footer class="footer bg-footer center">
         <div class="logo">
             <a class="logo" href="./index.html"></a>
         </div>
         <div class="footer-box">
-            <nav class="footer-box-item footer-menu">
-                <h4 class="footer-heading">Menu</h4>
+            <nav class="footer-item footer-menu">
+                <h4 class="footer-item-title">Menu</h4>
                 <a class="link" href="./index.html">Home</a>
                 <a class="link" href="./catalog.html">Catalog</a>
                 <a class="link" href="#">Cart</a>
             </nav>
-            <section class="footer-box-item footer-contacts">
-                <h4 class="footer-heading">Contacts</h4>
+            <section class="footer-item footer-contacts">
+                <h4 class="footer-item-title">Contacts</h4>
                 <a href="tel:1-408-555-555">+1 408 555 555</a>
                 <a href="mailto:help@dev.stor?subject=Test&nbsp;mail&body=Hi!" target="_blank"
                     rel="noopener noreferrer">help@dev.stor</a>

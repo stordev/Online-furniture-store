@@ -1,46 +1,83 @@
 @import '_vars';
 
-.top {
-    &-home-bg {
-        height: 735*$r;
-        background: url(../../img/bg/top/top-home-bg.png) top center / cover no-repeat;
+.bg {
+    &-top {
+        &-home {
+            background: url(../../img/bg/top/bg-top-home.jpg) top center / cover no-repeat;
+
+            @media screen and (max-width: $mobile) {
+                background: url(../../img/bg/top/bg-top-home_m.jpg) top center / cover no-repeat;
+            }
+        }
+
+        &-catalog {
+            background: url(../../img/bg/top/bg-top-catalog.jpg) top center / cover no-repeat;
+
+            @media screen and (max-width: $mobile) {
+                background: url(../../img/bg/top/bg-top-catalog_m.jpg) top center / cover no-repeat;
+            }
+        }
+
+        &-cart {
+            background: url(../../img/bg/top/bg-top-cart.jpg) top center / cover no-repeat;
+
+            @media screen and (max-width: $mobile) {
+                background: url(../../img/bg/top/bg-top-cart_m.jpg) top center / cover no-repeat;
+            }
+        }
     }
 
-    &-catalog-bg {
-        height: 400*$r;
-        background: url(../../img/bg/top/top-catalog-bg.png) top center / cover no-repeat;
+    &-for {
+        &-rest {
+            background: url(../../img/bg/for/bg-for-rest.jpg) center / cover no-repeat;
+
+            @media screen and (max-width: $mobile) {
+                background: url(../../img/bg/for/bg-for-rest_m.jpg) center / cover no-repeat;
+            }
+        }
+
+        &-work {
+            background: url(../../img/bg/for/bg-for-work.jpg) center / cover no-repeat;
+
+            @media screen and (max-width: $mobile) {
+                background: url(../../img/bg/for/bg-for-work_m.jpg) center / cover no-repeat;
+            }
+        }
+
+        &-kitchen {
+            background: url(../../img/bg/for/bg-for-kitchen.jpg) center / cover no-repeat;
+
+            @media screen and (max-width: $mobile) {
+                background: url(../../img/bg/for/bg-for-kitchen_m.jpg) center / cover no-repeat;
+            }
+        }
+
+        &-children {
+            background: url(../../img/bg/for/bg-for-children.jpg) center / cover no-repeat;
+
+            @media screen and (max-width: $mobile) {
+                background: url(../../img/bg/for/bg-for-children_m.jpg) center / cover no-repeat;
+            }
+        }
+
+        &-bath {
+            background: url(../../img/bg/for/bg-for-bath.jpg) center / cover no-repeat;
+
+            @media screen and (max-width: $mobile) {
+                background: url(../../img/bg/for/bg-for-bath_m.jpg) center / cover no-repeat;
+            }
+        }
     }
 
-    &-cart-bg {
-        height: 400*$r;
-        background: url(../../img/bg/top/top-cart-bg.jpg) top center / cover no-repeat;
-    }
-}
-
-
-.for {
-    &-rest-bg {
-        background: url(../../img/bg/for/for-rest-bg.png) center / cover no-repeat;
+    &-select {
+        background: url(../../img/icons/arrows/arrow_bottom.png) center right no-repeat;
     }
 
-    &-work-bg {
-        background: url(../../img/bg/for/for-work-bg.png) center / cover no-repeat;
+    &-footer {
+        background: url(../../img/bg/footer/bg-footer.jpg) top center / cover;
+
+        @media screen and (max-width: $mobile) {
+            background: url(../../img/bg/footer/bg-footer_m.jpg) center / cover no-repeat;
+        }
     }
-
-    &-kitchen-bg {
-        background: url(../../img/bg/for/for-kitchen-bg.png) center / cover no-repeat;
-    }
-
-    &-children-bg {
-        background: url(../../img/bg/for/for-children-bg.png) center / cover no-repeat;
-    }
-
-    &-bath-bg {
-        background: url(../../img/bg/for/for-bath-bg.png) center / cover no-repeat;
-    }
-}
-
-
-.footer-bg {
-    background: url(../../img/bg/footer-bg.png) top center / cover;
 }

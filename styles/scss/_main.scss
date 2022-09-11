@@ -1,30 +1,56 @@
 @import '_vars';
 
-.main {
-    border: $b-dev solid #000;
-    margin: $gap*$r 0;
-    padding-bottom: $gap * $r;
 
-    &-header {
-        border: $b-dev solid #00f;
-        font-size: 16*$r;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: $gap*$r 0;
+.body_blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 64*$r;
+
+    @media screen and (max-width: $mobile) {
+        gap: 32*$m;
     }
 }
 
-.main-block {
-    border: $b-dev solid #00f;
-    margin: $gap*$r 0;
+.main {
     display: flex;
     flex-direction: column;
+    gap: 64*$r;
 
-    &-title {
-        padding: $gap*$r 0;
-        font-weight: 600;
-        font-size: 48*$r;
-        color: #000000;
+    @media screen and (max-width: $mobile) {
+        gap: 32*$m;
+    }
+
+    &-header {
+        font-size: 16*$r;
+        row-gap: 16*$r;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: $mobile) {
+            flex-direction: column;
+            font-size: 14*$m;
+            row-gap: 16*$m;
+        }
+    }
+
+    &-block {
+        display: flex;
+        flex-direction: column;
+        gap: 32*$r;
+
+        @media screen and (max-width: $mobile) {
+            gap: 32*$m;
+        }
+
+        &-title {
+            font-size: 48*$r;
+            font-weight: 600;
+            color: #000000;
+
+            @media screen and (max-width: $mobile) {
+                font-size: 24*$m;
+            }
+        }
     }
 }
