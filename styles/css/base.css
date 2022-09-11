@@ -28,7 +28,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #000;
 }
 
 a:hover {
@@ -37,15 +37,6 @@ a:hover {
 
 img {
   width: 100%;
-}
-
-button {
-  border: 0.0694444444vw solid #000000;
-}
-
-button:hover {
-  background-color: #000000;
-  color: #FFFFFF;
 }
 
 .bg-top-home {
@@ -546,6 +537,20 @@ button:hover {
     row-gap: 2.1333333333vw;
   }
 }
+.product img {
+  display: flex;
+  align-self: center;
+  transition: transform 0.3s ease;
+}
+.product img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0.3472222222vw #ccc;
+}
+@media screen and (max-width: 767px) {
+  .product img:hover {
+    box-shadow: 0 0 1.3333333333vw #ccc;
+  }
+}
 .product-caption {
   font-size: 1.6666666667vw;
   font-weight: 500;
@@ -678,13 +683,21 @@ button:hover {
     margin: 0 2.6666666667vw;
   }
 }
+.breadcrumb-box a {
+  display: inline-block;
+  transition: transform 0.3s linear, box-shadow 0.3;
+}
 .breadcrumb-box a:hover {
   border-bottom: 0.0694444444vw solid;
+  box-shadow: 0 0 0.3472222222vw #ccc;
   text-decoration: none;
+  font-weight: bold;
+  transform: scale(1.05);
 }
 @media screen and (max-width: 767px) {
   .breadcrumb-box a:hover {
     border-bottom: 0.2666666667vw solid;
+    box-shadow: 0 0 1.3333333333vw #ccc;
   }
 }
 
@@ -721,4 +734,12 @@ button:hover {
 
 .ellipsis::after {
   content: "…";
+}
+
+.btn {
+  transition: background-color 0.3s ease-in-out, color;
+}
+.btn:hover {
+  background-color: #000;
+  color: #fff;
 }

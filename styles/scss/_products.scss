@@ -69,6 +69,23 @@
         row-gap: 8*$m;
     }
 
+    & img {
+        display: flex;
+        align-self: center;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 5*$r #ccc;
+
+            @media screen and (max-width: $mobile) {
+                box-shadow: 0 0 5*$m #ccc;
+            }
+        }
+    }
+
+
+
     &-caption {
         font-size: 24*$r;
         font-weight: 500;
