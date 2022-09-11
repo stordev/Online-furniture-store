@@ -1,85 +1,134 @@
 @import '_vars';
 
 .footer {
-    border: $b_dev solid #f0f;
-    margin-top: $gap*$r;
-    padding-top: $gap*$r;
+    padding-top: 32*$r;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    color: #888888;
-}
-
-.footer .logo {
-    align-self: flex-start;
-}
-
-.footer-box {
-    display: flex;
     flex-wrap: wrap;
-    gap: 140*$r;
-    font-weight: 500;
-    font-size: 14*$r;
+    color: #888;
+
+    @media screen and (max-width: $mobile) {
+        padding-top: 32*$m;
+        row-gap: 32*$m;
+        justify-content: center;
+    }
+
+    & .logo {
+        display: flex;
+
+        @media screen and (max-width: $mobile) {
+            display: none;
+        }
+    }
+
+    &-box {
+        font-weight: 500;
+        display: flex;
+        font-size: 14*$r;
+        gap: 130*$r;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 14*$m;
+            gap: 100*$m;
+            width: 100%;
+            justify-content: flex-start;
+        }
+    }
 
     &-item {
         display: flex;
         flex-direction: column;
         gap: 12*$r;
-        margin-bottom: $gap*$r;
+
+        @media screen and (max-width: $mobile) {
+            gap: 12*$m;
+        }
+
+        &-title {
+            font-size: 24*$r;
+            font-weight: 500;
+            color: #000000;
+
+            @media screen and (max-width: $mobile) {
+                font-size: 24*$m;
+            }
+        }
     }
-}
 
+    &-icons {
+        display: flex;
+        align-items: center;
+        gap: 20*$r;
 
-.footer-title {
-    font-weight: 500;
-    font-size: 24*$r;
-    color: #000000;
-}
+        @media screen and (max-width: $mobile) {
+            gap: 20*$m;
+        }
 
-.footer-icons {
-    padding-top: 4*$r;
-    display: flex;
-    flex-direction: row;
-    gap: 16*$r;
-    min-height: 23*$r;
-}
+        & a {
+            height: 23*$r;
 
-.footer-icons img {
-    height: 100%;
-    height: 23*$r;
-}
+            @media screen and (max-width: $mobile) {
+                height: 23*$m;
+            }
+        }
 
-.footer-icons img:hover {
-    background: rgba(222, 215, 215, 0.41);
-    transform: scale(1.1);
+        & img {
+            height: 100%;
+        }
+
+        & img:hover {
+            background: rgba(222, 215, 215, 0.41);
+            transform: scale(1.1);
+        }
+    }
 }
 
 .footer-form {
-    border: $b_dev solid #0f0;
-    min-width: 275*$r;
     display: flex;
     flex-direction: column;
+    width: 270*$r;
     gap: 12*$r;
-    margin-bottom: 32*$r;
+
+    @media screen and (max-width: $mobile) {
+        width: 270*$m;
+        gap: 12*$m
+    }
 
     &-text {
-        letter-spacing: 3*$r;
+        font-size: 14*$r;
         margin-bottom: 4*$r;
-        font-size: 12*$r;
+
+        @media screen and (max-width: $mobile) {
+            margin-bottom: 4*$m;
+            font-size: 12*$m;
+        }
     }
 
     &-email {
-        padding: 12*$r 0;
-        padding-left: 25*$r;
-        background: #FFFFFF;
         border: 1*$r solid #C4C4C4;
         border-radius: 20*$r;
         font-size: 15*$r;
+        padding: 12*$r 0;
+        padding-left: 24*$r;
         outline: none;
+        border-style: solid;
+        background: #FFFFFF;
+
+        @media screen and (max-width: $mobile) {
+            border: 1*$m solid #C4C4C4;
+            border-radius: 20*$m;
+            font-size: 15*$m;
+            padding: 12*$m 0;
+            padding-left: 24*$m;
+        }
     }
 
     &-email:focus {
-        box-shadow: 0 0 0 1*$r #000;
+        box-shadow: 0 0 0 1*$r;
+
+        @media screen and (max-width: $mobile) {
+            box-shadow: 0 0 0 1*$m;
+        }
     }
 
     &-email::placeholder {
@@ -87,11 +136,20 @@
     }
 
     &-btn {
-        padding: 12*$r;
-        background: rgba(222, 215, 215, 0.41);
-        border: 1*$r solid #FFFFFF;
+        padding-top: 12*$r;
+        padding-bottom: 12*$r;
+        border: 1*$r solid #fff;
         border-radius: 20*$r;
         font-size: 14*$r;
         text-align: center;
+        background-color: rgba(222, 215, 215, 0.41);
+
+        @media screen and (max-width: $mobile) {
+            padding-top: 12*$m;
+            padding-bottom: 12*$m;
+            border: 1*$m solid #fff;
+            border-radius: 20*$m;
+            font-size: 14*$m;
+        }
     }
 }

@@ -4,89 +4,130 @@
     &-box {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-gap: $gap*$r;
+        grid-gap: 32*$r;
+
+        @media screen and (max-width: $mobile) {
+            grid-template-columns: repeat(4, 3fr);
+            grid-gap: 16*$m;
+        }
     }
 
     &-item {
-        border: $b_dev solid #ff0;
-        height: 415*$r;
-        font-weight: 600;
         font-size: 34*$r;
+        font-weight: 600;
+        color: #fff;
         text-transform: uppercase;
-        color: #FFFFFF;
         display: flex;
         justify-content: center;
         align-items: center;
         grid-column: span 4;
-    }
 
-    &-big {
-        grid-column: span 6;
+        @media screen and (max-width: $mobile) {
+            font-size: 28*$m;
+        }
+
+        &:not(&-big) {
+            height: 415*$r;
+
+            @media screen and (max-width: $mobile) {
+                height: 375*$m;
+            }
+        }
+
+        &-big {
+            height: 415*$r;
+            grid-column: span 6;
+
+            @media screen and (max-width: $mobile) {
+                height: 243*$m;
+                grid-column: span 4;
+            }
+        }
     }
 }
 
-
 .product-box {
-    border: $b_dev solid #0f0;
     display: flex;
     justify-content: space-between;
-    row-gap: 56*$r;
     flex-wrap: wrap;
+    row-gap: 56*$r;
+
+    @media screen and (max-width: $mobile) {
+        flex-direction: column;
+        row-gap: 32*$m;
+    }
 }
 
 .product {
-    border: $b_dev solid #ff0;
-    width: $width-product * $r;
+    width: 380*$r;
+    row-gap: 8*$r;
     display: flex;
     flex-direction: column;
-    row-gap: 8*$r;
+
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+        row-gap: 8*$m;
+    }
 
     &-caption {
-        padding-top: 2*$r;
-        font-weight: 500;
         font-size: 24*$r;
-        color: #000000;
+        font-weight: 500;
+        color: #000;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 18*$m;
+        }
     }
 
     &-desc {
         font-size: 14*$r;
+        line-height: 1.2;
         overflow-wrap: break-word;
-        color: #888888;
+        color: #888;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 14*$m;
+        }
     }
 
     &-price {
-        padding-top: 4*$r;
-        font-weight: 500;
         font-size: 24*$r;
+        gap: 32*$r;
+        font-weight: 500;
         color: #050505;
         display: flex;
         flex-direction: row-reverse;
         justify-content: start;
-        gap: $gap*$r;
-    }
 
-    &-price span:not(:empty)::before {
-        content: '$';
-        display: inline-block;
-        // avoid text-decoration propagation from span
-        text-decoration-line: none;
-    }
+        @media screen and (max-width: $mobile) {
+            font-size: 18*$m;
+            gap: 32*$m;
+        }
 
-    &-price-base:not(:empty):after {
-        content: '99';
-        font-size: 50%;
-        vertical-align: top;
-    }
+        & span:not(:empty)::before {
+            content: '$';
+            display: inline-block;
+            // avoid text-decoration propagation from span
+            text-decoration-line: none;
+        }
 
-    &-price-sale:not(:empty)::after {
-        content: '97';
-        font-size: 50%;
-        vertical-align: top;
+        & &-base:not(:empty):after {
+            content: '.99';
+            color: #888;
+            font-size: 50%;
+            vertical-align: top;
+        }
+
+        & &-sale:not(:empty)::after {
+            content: '.97';
+            font-size: 50%;
+            vertical-align: top;
+        }
     }
 }
 
 .special .product-price-base {
-    color: #888888;
+    color: #888;
     text-decoration-line: line-through;
 }
 

@@ -6,10 +6,14 @@
 @import 'footer';
 @import 'products';
 
-
 .center {
-    padding-left: $padding;
-    padding-right: $padding;
+    padding-left: 120*$r;
+    padding-right: 120*$r;
+
+    @media screen and (max-width: $mobile) {
+        padding-left: 16*$m;
+        padding-right: 16*$m;
+    }
 }
 
 .logo {
@@ -23,6 +27,10 @@
         font-weight: 600;
         font-size: 36*$r;
         content: "Interior";
+
+        @media screen and (max-width: $mobile) {
+            font-size: 18*$m;
+        }
     }
 
     & a:hover {
@@ -31,52 +39,78 @@
 }
 
 .link-box {
-    border: $b-dev solid #ff0;
     font-size: 16*$r;
 
+
+    @media screen and (max-width: $mobile) {
+        font-size: 14*$m;
+    }
+
     & a {
-        border-bottom: solid 1*$r;
+        border-bottom: 1*$r solid;
         text-decoration: none;
+
+        @media screen and (max-width: $mobile) {
+            border-bottom: 1*$m solid;
+        }
     }
 }
 
 .breadcrumb-box {
-    padding-bottom: 8*$r;
-
     & li {
-        border: none;
         font-size: 16*$r;
+        border: none;
         display: inline;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 14*$m;
+        }
     }
 
     & li:not(:first-of-type)::before {
+        margin: 0 10*$r;
         content: "/";
-        margin: 10*$r;
+
+        @media screen and (max-width: $mobile) {
+            margin: 0 10*$m;
+        }
     }
 
     & a:hover {
-        border-bottom: solid 1*$r;
+        border-bottom: 1*$r solid;
         text-decoration: none;
+
+        @media screen and (max-width: $mobile) {
+            border-bottom: 1*$m solid;
+        }
     }
 }
 
 .select-box {
+    padding: 10*$r 14*$r;
     border: 1*$r solid #C4C4C4;
     border-radius: 20*$r;
-    padding: 10*$r 0;
-    padding-left: 14*$r;
-    padding-right: 16*$r;
+    width: fit-content;
+
+    @media screen and (max-width: $mobile) {
+        padding: 10*$m 14*$m;
+        border: 1*$m solid #C4C4C4;
+        border-radius: 20*$m;
+    }
 
     & select {
-        padding-right: 32*$r;
         font-size: 16*$r;
+        background-size: 18*$r auto;
         border: none;
         outline: none;
+        appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
-        appearance: none;
-        background: url(../../img/icons/arrow.png) center right no-repeat;
-        background-size: 20*$r;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 16*$m;
+            background-size: 18*$m auto;
+        }
     }
 }
 

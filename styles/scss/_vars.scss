@@ -1,7 +1,15 @@
-$b-dev: 0px; // border for dev purposes    
+$b-dev: 1px solid;
 $gap: 32;
-$width: 1440;
-$width-site: calc($width / 12) * 10;
-$width-product: calc(($width-site - 2 * $gap) / 3);
-$padding: calc(100vw / 12);
-$r: calc(100vw / $width); // resizability
+
+// width values
+$top-img-w: 1440;
+$top-img-w_m: 375; // mobile
+
+// resolutions
+$pc: 1920px;
+$mobile: 767px;
+
+// units
+$f: calc(1rem / 16); // font size
+$r: calc(100vw / $top-img-w); // resizability
+$m: calc(100vw / $top-img-w_m); // mobile size

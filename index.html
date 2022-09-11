@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./styles/css/base.css">
 </head>
 
-<body>
-    <div class="top top-home-bg center">
+<body class="body_blocks">
+    <div class="top top-size-home bg-top-home center">
         <header class="top-header">
             <div class="logo">
                 <a href="./index.html"></a>
@@ -20,27 +20,41 @@
             </form>
             <nav class="top-menu">
                 <a href="./catalog.html">Catalog</a>
-                <a href="cart.html">Cart</a>
+                <a href="./cart.html">Cart</a>
+            </nav>
+            <nav class="top-menu_m">
+                <a href="#">
+                    <img src="./img/icons/menu/search.png" alt="Search">
+                </a>
+                <a href="./catalog.html">
+                    <img src="./img/icons/menu/catalog.png" alt="Catalog">
+                </a>
+                <a href="./cart.html">
+                    <img src="./img/icons/menu/cart.png" alt="Cart">
+                </a>
             </nav>
         </header>
-        <section class="top-block">
+        <div class="top-block">
+
+        </div>
+        <section class="top-box">
             <h1 class="top-title">Everything Your Home Deserves</h1>
             <p class="top-slogan">Our furniture &#8211; your reflection</p>
+            <div class="link-box">
+                <a href="./catalog.html">Go to catalog</a>
+            </div>
         </section>
-        <div class="link-box">
-            <a href="./catalog.html">Go to catalog</a>
-        </div>
     </div>
 
     <div class="main center">
         <section class="main-block for">
             <h2 class="main-block-title ellipsis">Furniture for</h2>
             <div class="for-box">
-                <div class="for-item for-rest-bg for-big ">Rest</div>
-                <div class="for-item for-work-bg for-big">Work</div>
-                <div class="for-item for-kitchen-bg">Kitchen</div>
-                <div class="for-item for-children-bg">Children's</div>
-                <div class="for-item for-bath-bg">Bath</div>
+                <div class="for-item for-item-big bg-for-rest">Rest</div>
+                <div class="for-item for-item-big bg-for-work">Work</div>
+                <div class="for-item bg-for-kitchen">Kitchen</div>
+                <div class="for-item bg-for-children">Children's</div>
+                <div class="for-item bg-for-bath">Bath</div>
             </div>
         </section>
 
@@ -79,7 +93,7 @@
         </section>
 
         <section class="main-block catalog">
-            <h2 class="main-block-title">Catalog</h2>
+            <h2 class="main-block-title">Product Catalog</h2>
             <div class="product-box catalog">
                 <div class="product">
                     <img class="product-img" src="./img/products/bed_TATRAN.png" alt="Bed TATRAN">
@@ -139,27 +153,26 @@
                     </div>
                 </div>
             </div>
+            <div class="link-box">
+                <a href="./catalog.html">Go to catalog</a>
+            </div>
         </section>
-
-        <div class="link-box">
-            <a href="./catalog.html">Go to catalog</a>
-        </div>
     </div>
 
 
-    <footer class="footer footer-bg center">
+    <footer class="footer bg-footer center">
         <div class="logo">
             <a class="logo" href="./index.html"></a>
         </div>
         <div class="footer-box">
-            <nav class="footer-box-item footer-menu">
-                <h4 class="footer-title">Menu</h4>
+            <nav class="footer-item footer-menu">
+                <h4 class="footer-item-title">Menu</h4>
                 <a class="link" href="./index.html">Home</a>
                 <a class="link" href="./catalog.html">Catalog</a>
                 <a class="link" href="#">Cart</a>
             </nav>
-            <section class="footer-box-item footer-contacts">
-                <h4 class="footer-title">Contacts</h4>
+            <section class="footer-item footer-contacts">
+                <h4 class="footer-item-title">Contacts</h4>
                 <a href="tel:1-408-555-555">+1 408 555 555</a>
                 <a href="mailto:help@dev.stor?subject=Test&nbsp;mail&body=Hi!" target="_blank"
                     rel="noopener noreferrer">help@dev.stor</a>
