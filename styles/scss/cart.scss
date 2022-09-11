@@ -315,7 +315,7 @@
         }
     }
 
-    & button {
+    &-btn {
         font-size: 16*$r;
         margin-top: 18*$r;
         padding: 10*$r 0;
@@ -330,5 +330,38 @@
             padding: 10*$m 0;
             border-radius: 20*$m;
         }
+
+        &:hover {
+            animation-name: checkout_btn-animation;
+            animation-duration: 0.4s;
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}
+
+@keyframes checkout_btn-animation {
+    0% {
+        background-color: #fff;
+        color: #333;
+    }
+
+    25% {
+        background-color: #ccc;
+        color: #888;
+    }
+
+    50% {
+        background-color: #888;
+    }
+
+    75% {
+        background-color: #333;
+        color: #ccc;
+    }
+
+    100% {
+        background-color: #000;
+        color: #eee;
     }
 }

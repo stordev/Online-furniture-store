@@ -29,7 +29,7 @@ html {
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: #000;
 }
 
 a:hover {
@@ -38,13 +38,4 @@ a:hover {
 
 img {
     width: 100%;
-}
-
-button {
-    border: 1*$r solid #000000;
-}
-
-button:hover {
-    background-color: #000000;
-    color: #FFFFFF;
 }

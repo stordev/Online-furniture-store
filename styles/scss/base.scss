@@ -76,12 +76,21 @@
         }
     }
 
-    & a:hover {
-        border-bottom: 1*$r solid;
-        text-decoration: none;
+    & a {
+        display: inline-block;
+        transition: transform 0.3s linear, box-shadow 0.3;
 
-        @media screen and (max-width: $mobile) {
-            border-bottom: 1*$m solid;
+        &:hover {
+            border-bottom: 1*$r solid;
+            box-shadow: 0 0 5*$r #ccc;
+            text-decoration: none;
+            font-weight: bold;
+            transform: scale(1.05);
+
+            @media screen and (max-width: $mobile) {
+                border-bottom: 1*$m solid;
+                box-shadow: 0 0 5*$m #ccc;
+            }
         }
     }
 }
@@ -116,4 +125,13 @@
 
 .ellipsis::after {
     content: '\2026';
+}
+
+.btn {
+    transition: background-color 0.3s ease-in-out, color;
+
+    &:hover {
+        background-color: #000;
+        color: #fff;
+    }
 }

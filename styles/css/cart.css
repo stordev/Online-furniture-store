@@ -316,7 +316,7 @@
     letter-spacing: 0.5333333333vw;
   }
 }
-.checkout button {
+.checkout-btn {
   font-size: 1.1111111111vw;
   margin-top: 1.25vw;
   padding: 0.6944444444vw 0;
@@ -326,10 +326,62 @@
   text-align: center;
 }
 @media screen and (max-width: 767px) {
-  .checkout button {
+  .checkout-btn {
     font-size: 4.2666666667vw;
     margin-top: 4.8vw;
     padding: 2.6666666667vw 0;
     border-radius: 5.3333333333vw;
+  }
+}
+.checkout-btn:hover {
+  -webkit-animation-name: checkout_btn-animation;
+          animation-name: checkout_btn-animation;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  background-color: #000;
+  color: #fff;
+}
+
+@-webkit-keyframes checkout_btn-animation {
+  0% {
+    background-color: #fff;
+    color: #333;
+  }
+  25% {
+    background-color: #ccc;
+    color: #888;
+  }
+  50% {
+    background-color: #888;
+  }
+  75% {
+    background-color: #333;
+    color: #ccc;
+  }
+  100% {
+    background-color: #000;
+    color: #eee;
+  }
+}
+
+@keyframes checkout_btn-animation {
+  0% {
+    background-color: #fff;
+    color: #333;
+  }
+  25% {
+    background-color: #ccc;
+    color: #888;
+  }
+  50% {
+    background-color: #888;
+  }
+  75% {
+    background-color: #333;
+    color: #ccc;
+  }
+  100% {
+    background-color: #000;
+    color: #eee;
   }
 }
