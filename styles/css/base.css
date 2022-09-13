@@ -44,7 +44,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .bg-top-home {
-    background: url(../../img/bg/top/bg-top-home_m.jpg) top center/cover no-repeat;
+    background: url(../../img/bg/top/bg-top-home-s.jpg) top center/cover no-repeat;
   }
 }
 .bg-top-catalog {
@@ -52,7 +52,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .bg-top-catalog {
-    background: url(../../img/bg/top/bg-top-catalog_m.jpg) top center/cover no-repeat;
+    background: url(../../img/bg/top/bg-top-catalog-s.jpg) top center/cover no-repeat;
   }
 }
 .bg-top-cart {
@@ -60,7 +60,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .bg-top-cart {
-    background: url(../../img/bg/top/bg-top-cart_m.jpg) top center/cover no-repeat;
+    background: url(../../img/bg/top/bg-top-cart-s.jpg) top center/cover no-repeat;
   }
 }
 .bg-for-rest {
@@ -68,7 +68,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .bg-for-rest {
-    background: url(../../img/bg/for/bg-for-rest_m.jpg) center/cover no-repeat;
+    background: url(../../img/bg/for/bg-for-rest-s.jpg) center/cover no-repeat;
   }
 }
 .bg-for-work {
@@ -76,7 +76,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .bg-for-work {
-    background: url(../../img/bg/for/bg-for-work_m.jpg) center/cover no-repeat;
+    background: url(../../img/bg/for/bg-for-work-s.jpg) center/cover no-repeat;
   }
 }
 .bg-for-kitchen {
@@ -84,7 +84,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .bg-for-kitchen {
-    background: url(../../img/bg/for/bg-for-kitchen_m.jpg) center/cover no-repeat;
+    background: url(../../img/bg/for/bg-for-kitchen-s.jpg) center/cover no-repeat;
   }
 }
 .bg-for-children {
@@ -92,7 +92,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .bg-for-children {
-    background: url(../../img/bg/for/bg-for-children_m.jpg) center/cover no-repeat;
+    background: url(../../img/bg/for/bg-for-children-s.jpg) center/cover no-repeat;
   }
 }
 .bg-for-bath {
@@ -100,7 +100,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .bg-for-bath {
-    background: url(../../img/bg/for/bg-for-bath_m.jpg) center/cover no-repeat;
+    background: url(../../img/bg/for/bg-for-bath-s.jpg) center/cover no-repeat;
   }
 }
 .bg-select {
@@ -111,7 +111,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .bg-footer {
-    background: url(../../img/bg/footer/bg-footer_m.jpg) center/cover no-repeat;
+    background: url(../../img/bg/footer/bg-footer-s.jpg) center/cover no-repeat;
   }
 }
 
@@ -201,17 +201,17 @@ img {
 .top-menu a {
   display: flex;
 }
-.top-menu_m {
+.top-menu-m {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  .top-menu_m {
+  .top-menu-m {
     padding: 1.0666666667vw 0;
     gap: 8.5333333333vw;
     display: flex;
     align-items: center;
   }
-  .top-menu_m img {
+  .top-menu-m img {
     display: flex;
     max-height: 5.0666666667vw;
   }

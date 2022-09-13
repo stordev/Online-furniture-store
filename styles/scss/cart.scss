@@ -28,7 +28,6 @@
         grid-column-gap: 32*$r;
         grid-row-gap: 48*$r;
 
-
         @media screen and (max-width: $mobile) {
             padding-top: 64*$m;
             grid-template-columns: repeat(4, 3fr);
